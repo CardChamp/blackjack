@@ -1,0 +1,136 @@
+.modalShow{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7)
+}
+.modalHide{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7)
+}
+.modal-content{
+    background-color: #ccc;
+    margin: 2% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(255,255,255,0.2),0 7px 20px 0 rgba(255,255,255,0.17);
+    border-radius: 3px;
+}
+.closeBtn{
+    color: slategray;
+    float: right;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.closeBtn:hover,.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.modalTitle{
+    text-align: center;
+    margin: 0;
+}
+.modalSubTitle{
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+}
+.suggestionWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+}
+.suggestionContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.suggestionTitle{
+    text-align: center;
+    margin: 0;
+}
+.title{
+    font-size: 3em;
+}
+.stats-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.first-stats{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.second-stats{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.good-percentage{
+    color: green;
+    font-weight: bold;
+}
+.average-percentage{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.bad-percentage{
+    color: red;
+    font-weight: bold;
+}
+
+@media screen and  (max-width: 800px){
+    .suggestionWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .stats-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .first-stats{
+        width: 100%;
+    }
+    .second-stats{
+        width: 100%;
+    }
+}
+
+@media screen and  (max-width: 500px){
+    .suggestionWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .stats-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .first-stats{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .second-stats{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+}
