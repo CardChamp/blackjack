@@ -4,6 +4,6 @@ This Front-End React site contains a traditional blackjack game and maintains co
 
 This  CRUD site makes requests from the Deck of Cards API to maintain the deck, cards dealt, and discarded cards.  All this data is maintained in state after each call and it is this data that calculates the correct plays and game stats.
 
-This project was bootstrapped with Create React App and uses the React Router Dom and Axios packages that need to be installed.
+Dependencies - React Router Dom and Axios packages that need to be installed.
 
 "# blackjack" 
